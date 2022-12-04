@@ -1,5 +1,5 @@
 # Frontend-Mentor-Challenges
-A repo containing all my solved challenges from [Frontend Mentor](www.frontendmentor.io).
+A repo containing all my solved challenges from [Frontend Mentor](https://www.frontendmentor.io).
 
 # URLs
 
