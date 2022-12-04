@@ -1,0 +1,18 @@
+.header.theme1 {
+    .title {
+        color: var(--white);
+    }
+
+    .theme-menu {
+        color: var(--white);
+
+        .theme-toggler {
+            background-color: var(--theme1-background-toggle-keypad);
+            justify-content: start;
+
+            .theme-button {
+                background-color: var(--theme1-key2-background-toggle);
+            }
+        }
+    }
+}

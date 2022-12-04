@@ -1,0 +1,25 @@
+@import './styles/general.scss';
+@import './styles/theme1.scss';
+@import './styles/theme2.scss';
+@import './styles/theme3.scss';
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+

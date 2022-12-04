@@ -1,0 +1,23 @@
+.wrapper { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.theme1 {
+        background-color: var(--theme1-background-main);
+    }
+
+    &.theme2 {
+        background-color: var( --theme2-background-main);
+    }
+
+    &.theme3 {
+        background-color: var(--theme3-background-main);
+    }
+}

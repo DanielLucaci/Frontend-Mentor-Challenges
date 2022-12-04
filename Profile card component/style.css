@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(25, 161, 173);
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+}
+
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+h1 span, p {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%)
+}
+
+#bg-pattern-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%,-50%);
+}
+
+#bg-pattern-bottom {
+    position: absolute;
+    right:0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-top {
+    position: relative;
+    width: 350px;
+    height: 140px;
+}
+
+.card-top .svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bg-pattern-card.svg');
+}
+
+.card-top .image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-top img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.about h1 {
+    padding: 75px 0 10px 0;
+}
+
+.about h1 span {
+    padding-left: 5px;
+}
+
+.about p {
+    margin-bottom: 30px;
+}
+
+.about-likes {
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 25px;
+}
+
+.about-likes div {
+    padding: 30px 0 25px 0;
+    text-align: center;
+}
+
+.about-likes div h1 {
+    margin-bottom: 5px;
+}
+
+.about-likes div p {
+    font-size: 11px;
+}
+
+
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width: 500px) {
+    #bg-pattern-top {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translate(-65%,-65%);
+    }
+    
+    #bg-pattern-bottom {
+        position: absolute;
+        right:0;
+        bottom: 0;
+        transform: translate(65%, 65%);
+    }
+}

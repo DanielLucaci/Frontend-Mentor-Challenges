@@ -1,0 +1,18 @@
+.header.theme3 {
+    .title { 
+        color: var(--theme3-text-yellow);
+    }
+
+    .theme-menu {
+        color: var(--theme3-text-yellow);
+
+        .theme-toggler { 
+            background-color: var(--theme3-background-toggle-keypad);
+            justify-content: end;
+
+            .theme-button {
+                background-color: var(--theme3-key2-background-toggle);
+            }
+        }
+    }
+}

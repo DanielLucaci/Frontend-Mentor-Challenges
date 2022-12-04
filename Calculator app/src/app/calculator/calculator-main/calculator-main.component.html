@@ -1,0 +1,26 @@
+<div class="calculator-main" appThemeDirective>
+  <div class="calculator-top">
+    <div
+      *ngFor="let button of buttons.top; let i = index"
+      [ngClass]="{ 'button': true, 'button-func': i == 3 }"
+      (click)="buttonClicked(button)"
+    >
+      <p>{{ button }}</p>
+      <div class="button-overlay"></div>
+    </div>
+  </div>
+  <div class="calculator-bottom">
+    <div
+      *ngFor="let button of buttons.bottom; let i = index"
+      (click)="buttonClicked(button)"
+      [ngClass]="{
+        'button': true,
+        'button-func': i == 0,
+        'button-equal': i == 1
+      }"
+    >
+      <p>{{ button }}</p>
+      <div class="button-overlay"></div>
+    </div>
+  </div>
+</div>

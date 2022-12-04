@@ -1,0 +1,24 @@
+:root { 
+    /** Background **/
+    --theme3-background-main: hsl(268, 75%, 9%);
+    --theme3-background-toggle-keypad: hsl(268, 71%, 12%);
+    --theme3-background-screen: hsl(268, 71%, 12%);
+
+    /** Keys **/
+
+    /* Violet */
+    --theme3-key1-background: hsl(281, 89%, 26%);
+    --theme3-key1-shadow: hsl(285, 91%, 52%);
+
+    /* Cyan */
+    --theme3-key2-background-toggle: hsl(176, 100%, 44%); 
+    --theme3-key2-shadow: hsl(177, 92%, 70%);
+
+    /* Dark violet */
+    --theme3-key3-background: hsl(268, 47%, 21%);
+    --theme3-key3-shadow: hsl(290, 70%, 36%);
+    
+    /** Text **/
+    --theme3-text-yellow:  hsl(52, 100%, 62%);
+    --theme3-text-blue: hsl(198, 20%, 13%);
+}

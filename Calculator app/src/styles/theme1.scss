@@ -1,0 +1,23 @@
+:root { 
+    /* Background */
+    --theme1-background-main: hsl(222, 26%, 31%);
+    --theme1-background-toggle-keypad: hsl(223, 31%, 20%);
+    --theme1-background-screen: hsl(224, 36%, 15%);
+
+    /* Keys */
+
+    /* Dark Blue */
+    --theme1-key1-background: hsl(225, 21%, 49%);
+    --theme1-key1-shadow: hsl(224, 28%, 35%);
+
+    /* Red */
+    --theme1-key2-background-toggle: hsl(6, 63%, 50%);
+    --theme1-key2-shadow: hsl(6, 70%, 34%);
+
+    /* Grayish orange */
+    --theme1-key3-background: hsl(30, 25%, 89%);
+    --theme1-key3-toggle: hsl(28, 16%, 65%);
+
+    /* Text */
+    --theme1-text: hsl(221, 14%, 31%);
+}

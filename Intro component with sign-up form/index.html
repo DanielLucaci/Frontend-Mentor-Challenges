@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <section role="main" class="main">
+      <div class="left">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="description">
+          See how experienced developers solve problems in real-time. <br />
+          Watching scripted tutorials is great, but understanding how <br />
+          developers think is invaluable.
+        </p>
+      </div>
+      <div class="right">
+        <div class="button">
+          <span class="bold">Try it free 7 days</span> &nbsp; then $20/mo.
+          thereafter
+        </div>
+        <form novalidate>
+          <div class="form-element">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First Name"
+            />
+            <span class="error"></span>
+            <p class="error-description">First Name cannot be empty</p>
+          </div>
+          <div class="form-element">
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name"
+            />
+            <span class="error"></span>
+            <p class="error-description">Last Name cannot be empty</p>
+          </div>
+          <div class="form-element">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <span class="error"></span>
+            <p class="error-description">Email cannot be empty</p>
+          </div>
+          <div class="form-element">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <span class="error"></span>
+            <p class="error-description">Password cannot be empty</p>
+          </div>
+          <button type="submit" class="submit-btn">
+            Claim your free trial
+          </button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/DanielLucaci"
+          >Daniel Lucaci</a
+        >.
+      </p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

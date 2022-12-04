@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    widtH: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 0 .3rem;
+    margin-bottom: 2rem;
+
+    .title { 
+        color: var(--white);
+        font-size: 1.6rem;
+        align-self: center;
+    }
+
+    .theme-menu {
+        display: flex;
+        width: 7rem;
+        justify-content: space-between;    
+        align-items: center;
+
+        p {
+            text-transform: uppercase;
+            transform: translateY(0.6rem);
+            font-size: .55rem;
+            letter-spacing: .1rem;
+        }
+
+        .theme-input { 
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 3.5rem;
+            
+            .theme-list {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.2rem 0.5rem;
+
+                li {
+                    font-size: .65rem;
+                }
+            }
+
+            .theme-toggler { 
+                width: 100%;
+                height: 1.25rem;
+                border-radius: 0.62rem;
+                padding: 0.18rem;
+                display: flex; 
+                cursor: pointer;
+
+                .theme-button {
+                    height: 0.875rem;
+                    width: 0.875rem;
+                    border-radius: 50%;
+
+                    &:hover {
+                        filter: brightness(150%);
+                    }
+                }
+            }
+        }
+    }   
+}

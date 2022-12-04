@@ -1,0 +1,21 @@
+.calculator-main.theme3 {
+    background-color: var(--theme3-background-toggle-keypad);
+
+    .button {
+        background-color: var(--theme3-key3-background);
+        border-color: var(--theme3-key3-shadow);
+        color: var(--theme3-text-yellow);
+
+        &.button-func {
+            background-color: var(--theme3-key1-background);
+            border-color: var(--theme3-key1-shadow);
+            color: var(--white);
+        }
+
+        &.button-equal {
+            background-color: var(--theme3-key2-background-toggle);
+            border-color: var(--theme3-key2-shadow);
+            color: var(--theme3-text-blue);
+        }
+    }
+}
