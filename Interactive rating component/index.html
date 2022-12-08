@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section role="main" class="main-section">
+      <div class="lightning"></div>
+      <div class="state rating-state">
+        <div class="icon-star">
+          <img src="./images/icon-star.svg" alt="Icon star" />
+        </div>
+        <h1 class="title">How did we do?</h1>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul class="rating">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+        <button type="button" class="submit-btn">Submit</button>
+      </div>
+
+      <div class="state thank-you-state disabled">
+        <div class="illustration">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="Ilustration thank you"
+          />
+        </div>
+
+        <div class="rating-result">
+          You selected <span class="rating-value"></span> out of 5
+        </div>
+
+        <h2 class="thank-you">Thank you!</h2>
+        <p class="feedback">
+          We appreciate you taking the time to give a rating. <br />
+          If you ever need more support, don’t hesitate to <br />
+          get in touch!
+        </p>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/DanielLucaci" target="_blank">Lucaci Daniel</a>.
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

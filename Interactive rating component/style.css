@@ -1,0 +1,185 @@
+:root { 
+    --background-color: #141519;
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --font-size: 15px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+}
+
+
+
+.disabled { 
+    display: none;
+}
+
+.main-section { 
+    height: 26rem;
+    width: 90%;
+    max-width: 26rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.lightning { 
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at top center, #252935, #181e27)
+}
+
+.state { 
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+/* Rating state */
+.icon-star {
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.rating-state .title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-bottom: 1.2rem;
+}
+
+.rating-state .description {
+    font-size: var(--font-size);
+    color: var(--medium-grey);
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.rating {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.75rem;
+}
+
+.rating li { 
+    background-color: var(--dark-blue);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--medium-grey);
+    cursor: pointer;
+}
+
+.rating li:hover { 
+    background-color: var(--orange) !important;
+    color: white;
+}
+
+.rating li.active {
+    background-color: var(--light-grey);
+    color: white;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--orange);
+    border-radius: 2rem; 
+    outline: none;
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: var(--font-size);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* Thank You State */
+.thank-you-state { 
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.illustration { 
+    margin-bottom: 1.75rem; 
+}
+
+.rating-result {
+    color: var(--orange);
+    font-size: var(--font-size);
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--dark-blue);
+    display: inline-block;
+    margin-bottom: 2.25rem;
+}
+
+.thank-you { 
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.feedback {
+    font-size: var(--font-size);
+    color: var(--light-grey);
+    line-height: 1.5rem;
+}
+
+/* Attribution */
+.attribution { 
+    color: var(--white);
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+}
+    
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
