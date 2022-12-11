@@ -10,3 +10,4 @@ Profile card component - https://www.frontendmentor.io/challenges/profile-card-c
 Rock, Paper, Scissors game - https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH  
 Social proof section - https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA  
 Stats preview card component - https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62  
+Testimonials grid section - https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7

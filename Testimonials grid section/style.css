@@ -1,0 +1,176 @@
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --atribution-color: hsl(228, 45%, 44%);
+    --font-size: 0.8125rem;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-blue);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* Main */
+main  {
+    max-width: 70.5rem;
+    width: 90%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "Daniel Daniel Daniel Jonathan Kira"
+        "Jeanette Patrick Patrick Patrick Kira";
+    grid-gap: 1.5rem 1.75rem; 
+}
+
+.card {
+    border-radius: .5rem;
+    padding: 1.5rem 2rem 2rem 1.8rem;
+    transform: scale(1.0);
+    transition: transform 0.6s ease-in-out; 
+}
+
+ .card:hover {
+    transform: scale(1.1);
+} 
+
+.card-top-left {
+    grid-area: Daniel;
+    background: url('./images/bg-pattern-quotation.svg');
+    background-position: 80% top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: var(--moderate-violet);
+}
+
+.card-top {
+    grid-area: Jonathan;
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.card-bottom-left {
+    grid-area: Jeanette;
+    background-color: var(--white);
+}
+
+.card-bottom {
+    grid-area: Patrick;
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.card-right {
+    grid-area: Kira;
+    background-color: var(--white);
+}
+
+.card-shadow { 
+    box-shadow: 3rem 3rem 5rem -3rem var(--light-gray);
+}
+
+
+/* Card header */
+.card-header {
+    display: flex;
+    margin-bottom: 1.25rem;
+}
+
+.image-wrapper {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.image-wrapper img{ 
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.description h1 { 
+    color: var(--white);
+    font-size: .8rem;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.description p {
+    color: var(--white);
+    opacity: 50%;
+    font-size: .625rem;
+}
+
+/* Card Main */
+.card-main {
+    margin-bottom: 1.4rem;
+}
+
+.card-main h2 { 
+    color: var(--white);
+    font-weight: 600;    
+    font-size: 1.0625rem;
+    letter-spacing: 0.05rem;
+}
+
+
+/* Card Footer */
+.card-footer {
+    opacity: 0.7;
+}
+
+.card-footer blockquote {
+    color: var(--white);
+    font-weight: 500;
+    font-size: var(--font-size);
+    line-height: 1.2rem;
+}
+
+.color-gray > * {
+    color: var(--very-dark-grayish-blue) !important;
+}
+
+/* Footer */
+footer { 
+    position: absolute;
+    bottom: 0.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution { 
+    font-size: 0.6875rem;
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: var(--atribution-color); 
+}
+
+@media only screen and (max-width: 60rem) {
+    main { 
+        padding: 3rem 0;
+    }
+
+    .wrapper { 
+      display: flex;   
+      flex-direction: column;
+    }
+}
