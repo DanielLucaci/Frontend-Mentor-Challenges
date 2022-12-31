@@ -1,0 +1,63 @@
+.wrapper {
+  max-width: 58.75rem;
+  width: 90%;
+  display: flex;
+  padding: 1rem;
+  padding-right: 0;
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 1.5rem 2rem -1rem var(--light-gray);
+}
+
+aside {
+  width: 33.33%;
+}
+
+article {
+  width: 66.66%;
+  padding: 3rem 6.25rem 0;
+}
+
+
+@media only screen and (max-width: 75rem) {
+    article {
+      padding: 3rem 4rem 0;
+    }
+}
+
+@media only screen and (max-width: 60rem) {
+  article {
+    padding: 3rem 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
+  .wrapper {
+    height: 100%;
+    max-width: 23.5rem;
+    position: relative;
+    padding: 0;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  article {
+    position: absolute;
+    top: 5rem;
+    z-index: 10;
+    background-color: var(--white);
+    width: 90%;
+    margin-left: 1.125rem;
+    padding: 1.75rem 1.5rem;
+    border-radius: .5rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+<header>
+  <h1 class="header__title">Select your plan</h1>
+  <p class="header__description">You have the option of monthly or yearly billing.</p>
+</header>
+
+<main>
+  <div class="cards">
+    <div
+      *ngFor="let plan of plans"
+      [ngClass]="[
+        'card',
+        'card-' + selectedPeriod,
+        plan.id === selectedPlanId ? 'card-active' : ''
+      ]"
+      (click)="onChangePlan(plan.id)"
+    >
+      <div class="card-logo">
+        <img
+          [src]="
+            '../../../assets/images/icon-' + plan.name.toLowerCase() + '.svg'
+          "
+          aria-hidden="true"
+        />
+      </div>
+      <div class="card-information">
+        <h2 class="card-information__title">{{ plan.name }}</h2>
+        <p class="card-information__price">
+          ${{ selectedPeriod === "monthly"
+              ? plan.price.monthly
+              : plan.price.yearly
+            }}/{{
+            selectedPeriod === "monthly" ? "mo" : "yr"
+            }}
+        </p>
+        <p *ngIf="selectedPeriod === 'yearly'">2 months free</p>
+      </div>
+    </div>
+  </div>
+  <div class="billing-period">
+    <span [ngClass]="{ period: true, active: selectedPeriod === 'monthly' }"
+      >Monthly</span
+    >
+    <div
+      [ngClass]="{
+        'billing-toggle': true,
+        'billing-toggle--end': selectedPeriod === 'yearly'
+      }"
+      title="Toggle period"
+      (click)="onChangePeriod()"
+    >
+      <div class="billing-toggle__button"></div>
+    </div>
+    <span [ngClass]="{ period: true, active: selectedPeriod === 'yearly' }">Yearly</span>
+  </div>
+</main>
+
+<footer>
+  <button class="btn--prev" (click)="onGoBack()">Go Back</button>
+  <button class="btn--next" (click)="onConfirm()">Next Step</button>
+</footer>
+

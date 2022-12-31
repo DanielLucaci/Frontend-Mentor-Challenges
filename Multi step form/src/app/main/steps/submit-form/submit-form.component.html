@@ -1,0 +1,70 @@
+<header>
+  <h1 class="header__title">Personal info</h1>
+  <p class="header__description">
+    Please provide your name, email address, and phone number.
+  </p>
+</header>
+
+<main>
+  <form class="submit-form" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-control">
+      <span class="error" *ngIf="!name.valid && name.touched"
+        >Please enter a valid name</span
+      >
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="e.g. Stephen King"
+        ngModel
+        #name="ngModel"
+        required
+        (focus)="setPlaceholder($event)"
+        (blur)="setPlaceholder($event, 'e.g. Stephen King')"
+      />
+    </div>
+    <div class="form-control">
+      <span class="error" *ngIf="!email.valid && email.touched"
+        >Please enter a valid email</span
+      >
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        ngModel
+        email
+        #email="ngModel"
+        placeholder="e.g. stephenking@lorem.com"
+        required
+        (focus)="setPlaceholder($event)"
+        (blur)="setPlaceholder($event, 'e.g. stephenking@lorem.com')"
+        (input)="onEmailChange($event)"
+      />
+    </div>
+    <div class="form-control">
+      <span class="error" *ngIf="!phone.valid && phone.touched"
+        >Please enter a valid phone number</span
+      >
+      <label for="phone">Phone Number</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        ngModel
+        placeholder="e.g. +1234567890"
+        pattern="\+[0-9]{1,20}"
+        #phone="ngModel"
+        required
+        (focus)="setPlaceholder($event)"
+        (blur)="setPlaceholder($event, 'e.g. +1234567890')"
+      />
+    </div>
+    <footer>
+      <button type="submit" [disabled]="!f.valid" class="submit-btn">
+        Next Step
+      </button>
+    </footer>
+  </form>
+</main>

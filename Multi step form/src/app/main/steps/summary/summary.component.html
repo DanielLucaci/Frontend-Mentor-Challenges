@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <header>
+    <h1 class="header__title">Finishing up</h1>
+    <p class="header__description">
+      Double-check everything looks OK before confirming.
+    </p>
+  </header>
+
+  <main>
+    <div class="summary">
+      <div class="summary-plan">
+        <div class="summary-header">
+          <h2 class="summary-header__title">{{ plan.name }} ({{ capitalizedPeriod }})</h2>
+          <p class="summary-header__cta" (click)="onChangePeriod()">Change</p>
+        </div>
+        <h2 class="summary-plan__price">${{ plan.price[user.period] }}/{{ shortenedPeriod }}</h2>
+      </div>
+
+      <div class="summary-add-ons">
+        <div *ngFor="let addOn of addOns" class="summary-add-on">
+          <h2 class="summary-add-on__title">{{ addOn.name }}</h2>
+          <p class="summary-add-on__price">+${{ addOn.price[user.period] }}/{{ shortenedPeriod }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-total">
+      <h2 class="summary-total__title">Total (per month/year)</h2>
+      <p class="summary-total__price">+${{ total }}/{{ shortenedPeriod }}</p>
+    </div>
+  </main>
+
+  <footer>
+    <button class="btn--prev" (click)="onGoBack()">Go Back</button>
+    <button class="btn--confirm" (click)="onConfirm()">Confirm</button>
+  </footer>
+</div>

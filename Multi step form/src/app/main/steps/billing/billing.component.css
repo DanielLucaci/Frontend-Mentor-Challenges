@@ -1,0 +1,190 @@
+header {
+  margin-bottom: 3rem;
+}
+
+.header__title {
+  font-size: 1.6rem;
+  margin-bottom: .8rem;
+  color: var(--marine-blue);
+  font-weight: 700;
+}
+
+.header__description {
+  font-weight: 400;
+  font-size: .75rem;
+  color: var(--cool-gray);
+}
+
+/* Main */
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.card {
+  padding: 1.25rem 1rem 1rem;
+  border: 1px solid var(--cool-gray);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card.card-active {
+  border-color: var(--marine-blue);
+  background-color: var(--magnolia);
+}
+
+.card-logo {
+  margin-bottom: 2.8rem;
+}
+
+.card.card-yearly .card-logo{
+  margin-bottom: 1.75rem;
+}
+
+.card-information__title {
+  color: var(--marine-blue);
+  font-size: 1rem;
+  margin-bottom: .3rem;
+}
+
+.card-information__price {
+  color: var(--cool-gray);
+  font-size: .75rem;
+}
+
+.card-information__price + p {
+  color: var(--marine-blue);
+  font-weight: 400;
+  font-size: .7rem;
+  margin-top: .3rem;
+}
+
+
+/* Toggle */
+.billing-period {
+  width: 100%;
+  background-color: var(--magnolia);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  border-radius: 0.5rem;
+  margin-bottom: 6.5rem;
+}
+
+.period {
+  color: var(--cool-gray);
+  font-weight: 500;
+  font-size: .75rem;
+}
+
+.period.active {
+  color: var(--marine-blue);
+}
+
+.billing-toggle {
+  height: 1.25rem;
+  width: 2.4rem;
+  border-radius: 0.625rem;
+  background-color: var(--marine-blue);
+  margin: 0 1.5rem;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.billing-toggle--end {
+  justify-content: flex-end;
+}
+
+.billing-toggle__button {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.btn--prev {
+  font-size: .75rem;
+  color: var(--cool-gray);
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.btn--next {
+  padding: .7rem 1.2rem;
+  font-size: .8rem;
+  background-color: var(--marine-blue);
+  color: white;
+  border-radius: .5rem;
+}
+
+.btn--prev,
+.btn--next {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 45rem) {
+  header {
+    margin-bottom: 1.7rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    padding: .8rem;
+  }
+
+  .card-logo {
+    margin-right: .875rem;
+  }
+
+  .card-logo, .billing-period {
+    margin-bottom: 0 !important;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 23.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  footer {
+    width: 100%;
+  }
+
+  .header__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+

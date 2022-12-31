@@ -1,0 +1,27 @@
+.wrapper  {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 23rem;
+}
+
+.logo {
+  margin-bottom: 2.25rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: .8rem;
+  color: var(--marine-blue);
+  font-weight: 700;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--cool-gray);
+  line-height: 1.5rem;
+  text-align: center;
+}

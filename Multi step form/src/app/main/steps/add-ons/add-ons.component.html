@@ -1,0 +1,45 @@
+<header>
+  <h1 class="header__title">Pick add-ons</h1>
+  <p class="header__description">
+    Add-ons help enhance your gaming experience.
+  </p>
+</header>
+
+<main>
+  <div class="cards">
+    <div
+      *ngFor="let addOn of addOns"
+      [ngClass]="{
+        card: true,
+        active: selectedAddOns.includes(addOn.id)
+      }"
+    >
+      <div
+        class="card-checkbox"
+        (click)="onToggleAddOn(addOn.id)"
+      >
+        <img
+          *ngIf="selectedAddOns.includes(addOn.id)"
+          src="../../../../assets/images/icon-checkmark.svg"
+          alt="Icon checkmark"
+        />
+      </div>
+      <div class="card-information">
+        <h2 class="card-information__title">{{ addOn.name }}</h2>
+        <p class="card-information__description">{{ addOn.description }}</p>
+      </div>
+      <div class="card-period">
+        +${{
+          period === "monthly"
+            ? addOn.price.monthly
+            : addOn.price.yearly
+        }}/{{ period === "monthly" ? "mo" : "yr" }}
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <button class="btn--prev" (click)="onGoBack()">Go Back</button>
+  <button class="btn--next" (click)="onConfirm()">Next Step</button>
+</footer>

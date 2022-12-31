@@ -1,0 +1,118 @@
+
+header {
+  margin-bottom: 3rem;
+}
+
+.header__title {
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+    color: var(--marine-blue);
+    font-weight: 700;
+}
+
+.header__description {
+    font-weight: 400;
+    font-size: .75rem;
+    color: var(--cool-gray);
+
+}
+
+.form-control {
+    margin-bottom: 1.8rem;
+}
+
+.form-control:last-of-type {
+    margin-bottom: 5.75rem;
+}
+
+.form-control label{
+    display: block;
+    color: var(--marine-blue);
+    font-weight: 400;
+    font-size: .8rem;
+    margin-bottom: .6rem;
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    padding: .8rem;
+    border-radius: .5rem;
+    border: 1px solid var(--cool-gray);
+    outline: none;
+}
+
+.form-control input::placeholder {
+  color: var(--cool-gray);
+  font-weight: 700;
+}
+
+.form-control > .error {
+  color: var(--strawberry-red);
+  font-size: .8rem;
+  float: right;
+  font-weight: 500;
+}
+
+
+.submit-btn {
+    float: right;
+    padding: .7rem 1.2rem;
+    font-size: .8rem;
+    background-color: var(--marine-blue);
+    color: white;
+    border-radius: .5rem;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid var(--strawberry-red);
+}
+
+@media only screen and (max-width: 45rem) {
+  header {
+    margin-bottom: 1.7rem;
+  }
+
+  .form-control {
+    margin-bottom: 1.2rem;
+  }
+
+  .form-control:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .form-control label {
+    margin-bottom: .2rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 23.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  footer {
+    width: 100%;
+  }
+
+  .header__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
