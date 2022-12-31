@@ -1,3 +1,11 @@
+# Intro 
+
+An [Advice generator app](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) made with HTML, CSS and JavaScript.
+
+# Live demo 
+
+A live demo of this application can be found under [this link](https://frontend-mentor-challenges-l794.vercel.app).
+
 # Frontend Mentor - Advice generator app
 
 ![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)

@@ -1,3 +1,11 @@
+# Intro 
+
+A [Testimonials grid section](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) made with HTML and CSS.
+
+# Live demo 
+
+A live demo of this application can be found under [this link](https://frontend-mentor-challenges-81y7.vercel.app).
+
 # Frontend Mentor - Testimonials grid section
 
 ![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)
